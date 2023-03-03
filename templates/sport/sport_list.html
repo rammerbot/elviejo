@@ -44,7 +44,7 @@
         <!-- FIN primer bloque pantalla blog -->
 
         <!-- inicio del segundo bloque - Ligas -->
-        <div class="cell small-12 large-4 ligas_menu shadow" ">
+        <div class="cell small-12 large-4 ligas_menu shadow">
             <h4 class="titulo_menu_ligas">Ligas</h4>
             <ul class="vertical menu">
                 {% for liga in ligas %}
@@ -53,31 +53,33 @@
             </ul>
         </div>
         <!-- FIN inicio del segundo bloque - Ligas -->
+
+        <!-- inicio de bloque de paginacion -->
+        </div class="cell ">
+        {% if is_paginated %}
+            <div class="cell paginacion">
+                <nav aria-label="Pagination">
+                    <ul class="pagination">
+                        {% if page_obj.has_previous  %}
+                        <li class="pagination-previous"><a href="?page={{page_obj.previous_page_number}}">atras</a></li>
+                        {% endif %}
+                        {% for pagina in paginator.page_range %}
+                            {%if pagina == page_obj.number%}
+                                <li class="current"><span class="show-for-sr">You're on page</span>{{pagina}}</li>
+                            {% else %}        
+                                <li><a href="?page={{pagina}}" aria-label="Pagina {{pagina}}">{{pagina}}</a></li>
+                            {%endif%}
+                        {% endfor %}
+                        {% if page_obj.has_next  %}
+                            <li class="pagination-next"><a href="?page={{page_obj.next_page_number}}" aria-label="Next page">siguiente</a></li>
+                        {% endif %}
+                    </ul>
+                </nav>
+            </div>
+        {% endif %}
+        <!-- FIN bloque de paginacion -->
     </div>
-    <!-- inicio de bloque de paginacion -->
-    </div class="cell ">
-    {% if is_paginated %}
-        <div class="cell">
-            <nav aria-label="Pagination">
-                <ul class="pagination">
-                    {% if page_obj.has_previous  %}
-                    <li class="pagination-previous"><a href="?page={{page_obj.previous_page_number}}">atras</a></li>
-                    {% endif %}
-                    {% for pagina in paginator.page_range %}
-                        {%if pagina == page_obj.number%}
-                            <li class="current"><span class="show-for-sr">You're on page</span>{{pagina}}</li>
-                        {% else %}        
-                            <li><a href="?page={{pagina}}" aria-label="Pagina {{pagina}}">{{pagina}}</a></li>
-                        {%endif%}
-                    {% endfor %}
-                    {% if page_obj.has_next  %}
-                        <li class="pagination-next"><a href="?page={{page_obj.next_page_number}}" aria-label="Next page">siguiente</a></li>
-                    {% endif %}
-                </ul>
-            </nav>
-        </div>
-    {% endif %}
-    <!-- FIN bloque de paginacion -->
+    
 </div>
 {% include "includes/footer.html" %}
 

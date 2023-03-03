@@ -180,8 +180,8 @@ body{
 }
 
 .resume {
+    margin-top: 2%;
     background-color: #d1d4d6;
-    padding: 4%;
     margin-bottom: 2%;
     border: 1px solid #1b1e1f;
     border-radius: 10px;
@@ -191,4 +191,13 @@ body{
 .league_title {
     color: #ce2c07;
     text-shadow: 0px 1px 2px #23282B;
+}
+
+.paginacion {
+    text-align: center;
+    background-color: #d1d4d6;
+    margin-bottom: 2%;
+    border: 1px solid #1b1e1f;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #333;
 }
