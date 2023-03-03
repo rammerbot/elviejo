@@ -2,7 +2,7 @@
 {% extends "user/base_user.html" %}
 {% load  static %}
 
-{% block title %}RammerBot | Iniciar Sesion {% endblock title %}
+{% block title %}El Viejo | Iniciar Sesion {% endblock title %}
 {% block content %}
 
 {% include "includes/header.html" %}
@@ -10,7 +10,7 @@
 <div class="grid-container">
     <div class="grid-x grid-margin-x align-center">
         <form method="post" class="cell medium-6 large-4" style="margin-top: 2em;">{% csrf_token %}
-            <div class="card" style="width: 100%;">
+            <div class="card shadow" style="width: 100%;">
                 <div class="card-divider">
                   <h4>Acceso de usuario</h4>
                 </div>

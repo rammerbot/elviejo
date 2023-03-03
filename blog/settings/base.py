@@ -46,6 +46,8 @@ LOCAL_APPS = [
     'applications.users',
     'applications.favoritos',
     'applications.entrada',
+    'applications.sport',
+    'applications.sobrenosotros',
 ]
 INSTALLED_APPS = BASE_APPS + THIRD_APPS + LOCAL_APPS
 

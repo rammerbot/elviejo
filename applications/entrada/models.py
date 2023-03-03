@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.postgres.fields import ArrayField
 from datetime import datetime, timedelta
 from django.template.defaultfilters import slugify
 from django.conf import settings
@@ -53,6 +54,7 @@ class Entry(models.Model):
     create_at = models.DateTimeField('Fecha de Creacion', auto_now_add=True)
     update_at = models.DateTimeField('Fecha de Actualizacion', auto_now=True)
     objects = EntryManager()
+    video = models.URLField()
 
     class Meta:
         verbose_name = 'Entrada'
@@ -78,4 +80,3 @@ class Entry(models.Model):
         return reverse_lazy('entrada_app:detail', kwargs = {
             'slug':self.slug
             })
-    

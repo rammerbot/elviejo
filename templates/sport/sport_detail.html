@@ -1,0 +1,55 @@
+<!-- head para PC -->
+{% extends "entrada/base_entrada.html" %}
+{% load  static %}
+{% block title %}El viejo | {{entrada.title}} {% endblock title %}
+{% block content %}
+
+{% include "includes/header.html" %}
+
+<div class="grid-container">
+    <div class="grid-x grid-margin-x" style="margin-top: 1em;">
+        <h5 class="cell titulo_cuotas">Cuotas Para la Liga {{league}}:</h5>
+
+        <!-- bloque de contenido del articulo -->
+        <div class="cell large-8">
+            <img src="{{quotes.image.url}}">
+            {% for quote in quotes %}
+            <div class="cell callout primary  escudo_div shadow">
+                <div class="cell grid-x grid-margin-x">
+                    <div class="cell large-6">
+                        <img class="escudo"  title="{{quote.locals}}"  src="{{quote.image_locals.url}}">
+                        <p class="quotas shadow">{{quote.locals}}</p>
+                        <p class="quotes shadow" >{{quote.local_quote}} </p>
+                        
+                    </div>  
+                    <div class="cell large-6">
+                        <img class="escudo"  title="{{quote.locals}}"  src="{{quote.image_locals.url}}">
+                        <p class="quotas shadow">{{quote.visitors}}</p>
+                        <p class="quotes shadow" >{{quote.visitor_quote}}</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p>{{entrada.content | safe}}</p>
+            </div>
+            {% endfor %}
+        </div>
+        <!-- FIN bloque contenido del articulo -->
+
+        <!-- bloque llamada a la accion -->
+        <div class="cell large-4">
+            <div class="card" style="width: 100%;">
+                <img src="{{league.front_page.url}}">
+                <div class="card-section" style="width: 100%;">
+                    <a href="{%url 'user_app:create_user'%}" class="button alert shadow">Apuesta con Nosotros</a>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <!-- FIN bloque llamada a la accion -->
+
+    </div>
+</div>
+{% include "includes/footer.html" %}
+
+{% endblock content %}

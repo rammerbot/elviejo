@@ -1,23 +1,31 @@
 <!-- head para PC -->
 {% extends "entrada/base_entrada.html" %}
 {% load  static %}
-{% block title %}RammerBot | {{entrada.title}} {% endblock title %}
+{% block title %}El Viejo | {{entrada.title}} {% endblock title %}
 {% block content %}
 
 {% include "includes/header.html" %}
 
-<div class="grid-container">
+<div class="grid-container ">
     <div class="grid-x grid-margin-x" style="margin-top: 1em;">
-        <h5 class="cell">{{entrada.title}}:</h5>
+        <h5 class="cell contac_letter">{{entrada.title}}:</h5>
 
         <!-- bloque de contenido del articulo -->
         <div class="cell large-8">
-            <div class="cell callout primary">
+            <div class="cell resume">
                 <p>{{entrada.resume}}</p>
             </div>
-            <div>
+            <div class="resume">
                 <p>{{entrada.content | safe}}</p>
-                
+                <div class="cell">
+                    <iframe id="ytplayer" type="text/html"
+                                class="cell"
+                                width="720" height="405"
+                                src="{{entrada.video}}"
+                                title="YouTube video player"
+                                frameborder="0" allowfullscreen>
+                    </iframe>
+                </div>
             </div>
         </div>
         <!-- FIN bloque contenido del articulo -->

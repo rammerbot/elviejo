@@ -28,3 +28,4 @@ class CategoriaManager(models.Manager):
     """entrada para obtener categorias"""
     def obtener_categorias(self):
         return self.all()
+    

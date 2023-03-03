@@ -30,4 +30,7 @@ class EntryDetail(DetailView):
     template_name = 'entrada/detail.html'
     model = Entry
     context_object_name = 'entrada'
+
+
+
     
