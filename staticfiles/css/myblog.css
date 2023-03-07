@@ -1,0 +1,204 @@
+body{
+    background-image: url(../img/fondo.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.header_head {
+    display: flex;
+    align-items: center;
+    background: black;
+    padding: 0.5em 1em 0.5em 1em;
+    box-shadow: 0px 0px 20px black;
+
+}
+
+.logo_header img {
+    width: 150px;
+    padding: 0px;
+    margin: 0%;
+    margin-left: 6%;
+    text-shadow: 0px 0px 10px whitesmoke;
+ }
+
+.menu_header a{
+    color: white;
+    background-color: #ce2c07;
+    transition: 50ms;
+    border: 1px solid #23282B;
+
+}
+
+.menu_header a:hover {
+    color: black;
+    background-color: whitesmoke;
+    transition: 50ms;
+    box-shadow: 0px 0px 20px rgb(193, 130, 3);
+}
+
+.blog-action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-favoritos {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: solid 1px green;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.card-favoritos-img {
+    width: 120px;
+    height: 120px;
+    margin-right: 1em;
+}
+
+.imagen_home2 {
+    height: 250px;
+
+}
+
+.mensaje_vacio {
+    color: whitesmoke;
+    font-size: 30px;
+}
+
+
+
+.footer_ev{
+    width: 100%;
+    background-color: black;
+    border: 1px solid #333;
+    color: #d1d4d6;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0px 0px 20px rgb(32, 31, 31);
+    margin: 0 auto;
+}
+
+.escudo_div {
+    text-align: center;
+}
+
+.escudo {
+    height: 100px;
+}
+
+.shadow {
+    box-shadow: 0px 0px 10px black;
+    transition: 5ms;
+    border-radius: 5px;
+    
+}
+
+.shadow:hover {
+    box-shadow: 0px 0px 20px rgb(193, 130, 3);
+    transition: 5ms;
+    
+}
+
+.quotas {
+    background-color: #ce2c07;
+    color: whitesmoke;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.quotes {
+    background-color: #333;
+    color: whitesmoke;
+    border-radius: 10px;
+}
+
+.titulo_cuotas{
+    padding-top: 1%;
+    font-weight: bold;
+    text-shadow: 0px 0px 2px rgb(248, 245, 245) ;
+    color: whitesmoke;
+}
+
+.ligas_menu {
+    background-color: #d1d4d6b0;
+    text-align: center;
+    height:auto;
+}
+
+.titulo_menu_ligas {
+    margin-top: 3%;
+}
+.lista_ligas a {
+    background-color: #ce2c07;
+    color: whitesmoke;
+    border: 1px solid rgba(245, 245, 245, 0.659);
+    border-radius: 5px;
+    width: 85%;
+    margin-left: 10%;
+    margin-top: 10px;
+}
+
+.lista_ligas a:hover {
+    background-color: #333;
+    color: rgb(250, 245, 245);
+    border: 1px solid whitesmoke;
+    box-shadow: 0px 0px 5px orange;
+}
+
+.etiqueta {
+    background-color: #333;
+    color: whitesmoke;
+}
+
+.contact {
+    background-color: #a32b006b;
+}
+
+.contac_letter {
+    color: whitesmoke;
+}
+
+.suscripcion_letter {
+    color: whitesmoke;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.suscripcion_boton {
+    float: right;
+    margin-right: 5%;
+}
+
+.suscripcion {
+    background-color: #a32b00bb;
+    border-radius: 10px;
+    border: 1px solid whitesmoke;
+}
+
+.resume {
+    margin-top: 2%;
+    padding: 15px;
+    background-color: #d1d4d6;
+    margin-bottom: 2%;
+    border: 1px solid #1b1e1f;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #333;
+}
+
+.league_title {
+    color: #ce2c07;
+    text-shadow: 0px 1px 2px #23282B;
+}
+
+.paginacion {
+    text-align: center;
+    background-color: #d1d4d6;
+    margin-bottom: 2%;
+    border: 1px solid #1b1e1f;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #333;
+}
