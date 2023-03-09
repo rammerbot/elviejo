@@ -23,18 +23,18 @@ body{
  }
 
 .menu_header a{
-    color: white;
-    background-color: #ce2c07;
+    color: rgb(2, 2, 2);
+    background-color: #fffeff;
     transition: 50ms;
     border: 1px solid #23282B;
 
 }
 
 .menu_header a:hover {
-    color: black;
-    background-color: whitesmoke;
+    color: whitesmoke;
+    background-color: #333;
     transition: 50ms;
-    box-shadow: 0px 0px 20px rgb(193, 130, 3);
+    box-shadow: 0px 0px 5px rgb(235, 61, 3);
 }
 
 .blog-action {
@@ -98,20 +98,20 @@ body{
 }
 
 .shadow:hover {
-    box-shadow: 0px 0px 20px rgb(193, 130, 3);
+    box-shadow: 0px 0px 20px rgb(236, 40, 1);
     transition: 5ms;
     
 }
 
 .quotas {
-    background-color: #ce2c07;
+    background-color: #5d0577;
     color: whitesmoke;
     border-radius: 10px;
     margin-top: 10px;
 }
 
 .quotes {
-    background-color: #333;
+    background-color: black;
     color: whitesmoke;
     border-radius: 10px;
 }
@@ -124,17 +124,18 @@ body{
 }
 
 .ligas_menu {
-    background-color: #d1d4d6b0;
+    background-color: black;
     text-align: center;
     height:auto;
 }
 
 .titulo_menu_ligas {
     margin-top: 3%;
+    color: whitesmoke;
 }
 .lista_ligas a {
-    background-color: #ce2c07;
-    color: whitesmoke;
+    background-color: whitesmoke;
+    color: #333;
     border: 1px solid rgba(245, 245, 245, 0.659);
     border-radius: 5px;
     width: 85%;
@@ -155,7 +156,7 @@ body{
 }
 
 .contact {
-    background-color: #a32b006b;
+    background-color: #2a02316b;
 }
 
 .contac_letter {
@@ -174,7 +175,7 @@ body{
 }
 
 .suscripcion {
-    background-color: #a32b006b;
+    background-color: #43034d46;
     border-radius: 10px;
     border: 1px solid whitesmoke;
 }
@@ -186,6 +187,7 @@ body{
     border: 1px solid #1b1e1f;
     border-radius: 10px;
     box-shadow: 0px 0px 10px #333;
+    
 }
 
 .league_title {
@@ -195,9 +197,13 @@ body{
 
 .paginacion {
     text-align: center;
-    background-color: #d1d4d6;
+    background-color: #e58ef3b0;
     margin-bottom: 2%;
     border: 1px solid #1b1e1f;
     border-radius: 10px;
     box-shadow: 0px 0px 10px #333;
+}
+
+.font_google {
+    font-family: Alfa Slab One;
 }
