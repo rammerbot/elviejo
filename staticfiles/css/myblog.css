@@ -1,5 +1,5 @@
 body{
-    background-image: url(../img/fondo.jpg);
+    background-image: url(../img/fondo_1.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -32,7 +32,7 @@ body{
 
 .menu_header a:hover {
     color: whitesmoke;
-    background-color: #333;
+    background-color: #340054;
     transition: 50ms;
     box-shadow: 0px 0px 5px rgb(235, 61, 3);
 }
@@ -98,7 +98,7 @@ body{
 }
 
 .shadow:hover {
-    box-shadow: 0px 0px 20px rgb(236, 40, 1);
+    box-shadow: 0px 0px 8px rgb(251, 251, 251);
     transition: 5ms;
     
 }
@@ -144,10 +144,10 @@ body{
 }
 
 .lista_ligas a:hover {
-    background-color: #333;
+    background-color: #340054;
     color: rgb(250, 245, 245);
     border: 1px solid whitesmoke;
-    box-shadow: 0px 0px 5px orange;
+    box-shadow: 0px 0px 5px rgb(254, 254, 254);
 }
 
 .etiqueta {
@@ -191,7 +191,7 @@ body{
 }
 
 .league_title {
-    color: #ce2c07;
+    color: #340054;
     text-shadow: 0px 1px 2px #23282B;
 }
 
