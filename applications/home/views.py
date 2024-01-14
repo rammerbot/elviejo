@@ -28,15 +28,15 @@ class IndexView(TemplateView):
 
     # obtener contexo de la base de datos
 
-    def get_context_data(self, **kwargs):
-        context = super(IndexView, self).get_context_data(**kwargs)
-        #texto de portada
-        context['home'] = Home.objects.latest('-create_at')
-        context["portada"]= Entry.objects.entrada_portada()
-        context['entradas_home']= Entry.objects.entradas_home()
-        context['entradas_recientes']=Entry.objects.entradas_recientes()
-        context['form'] = SuscribersForm
-        return context
+    # def get_context_data(self, **kwargs):
+    #     context = super(IndexView, self).get_context_data(**kwargs)
+    #     #texto de portada
+    #     context['home'] = Home.objects.latest('-create_at')
+    #     context["portada"]= Entry.objects.entrada_portada()
+    #     context['entradas_home']= Entry.objects.entradas_home()
+    #     context['entradas_recientes']=Entry.objects.entradas_recientes()
+    #     context['form'] = SuscribersForm
+    #     return context
 
 class SuscribersView(CreateView):
     form_class = ContactForm
