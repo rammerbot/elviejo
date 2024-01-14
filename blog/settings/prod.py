@@ -4,7 +4,7 @@ from .base import *
 DEBUG = True
 
 ALLOWED_HOSTS = ['.rammerbot.com']
-CSRF_TRUSTED_ORIGINS=['https://serviexpo.rammerbot.com']
+CSRF_TRUSTED_ORIGINS=['https://elviejo.rammerbot.com']
 
 
 # Application definition
